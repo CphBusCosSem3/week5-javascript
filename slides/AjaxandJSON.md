@@ -41,6 +41,20 @@ fetch('https://davidwalsh.name/demo/arsenal.json').then(function(response) {
 
 [Reference to more about the new javascript **fetch()** method](https://davidwalsh.name/fetch)  
 
+###Using javascript fetch() method with POST and Content-type header:
+```
+var promise = fetch("http://localhost:8084/ajax_json_solution/PersonControl", {
+        method: 'post',
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+            firstname: firstname,
+            lastname: lastname,
+            age: age
+        })
+    });
+```
 ##Demo ajax from java servlet  
 
 ###Same Origin Policy (SOP)
